@@ -1,1 +1,37 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Prueba1</title>
+</head>
+<body>
+    <main>
+        <form class="form-poem" id="form">
+            <div class="data">
+                <input type="text" name="Título" id="title" placeholder="Título">
+                <input type="date" name="Fecha" id="date" placeholder="Fecha" required>
+                <div class="Checkbox">
+                    <input type="checkbox" name="nuevo" id="new">
+                    <p>Nuevo</p>
+                </div>
+                <div class="Checkbox">
+                    <input type="checkbox" name="special" id="special">
+                    <p>Special</p> 
+                </div>
+                <select name="opciones" id="authors" required>
+                    <option value="" selected disabled hidden>Selecciona el autor</option>
+                    <option value="HE">JG</option>
+                    <option value="MG">AzDor Lupita</option>
+                </select>
+                <button type="submit">Enviar</button>
+            </div>
+            <div class="body">
+                <textarea id="poem" rows="8" placeholder="Cuerpo del Poema" required=""></textarea>
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
